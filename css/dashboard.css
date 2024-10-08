@@ -1,0 +1,74 @@
+body{
+ background-image: url(./imgs/fundo2.jpg);
+ background-size: cover;
+}
+.sair p{
+    color:  rgb(138, 210, 255);
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border: 2px solid rgb(0, 44, 88);    
+    background-color: rgb(2, 17, 77);   
+    padding: 7px;               
+    display: inline-block; 
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+   
+}
+.sair p:hover{
+    box-shadow: rgb(10, 10, 10) 0px 20px 30px -10px;
+    transition: box-shadow 0.5s;
+    scale: 1.1;
+    transition: 0.25s;
+}
+.juntar{
+    display: flex;
+    gap: 12px;
+   
+}
+.produto{
+    background-color: rgba(255, 255, 255, 0.456);
+    border: 3px solid rgb(2, 17, 77);  
+    border-radius: 8px;        
+    padding: 20px;
+    margin-bottom: 20px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+          
+}
+.produto{
+    display: inline-block;
+    margin: 18px;
+}
+.produto:hover{
+    box-shadow: rgb(10, 10, 10) 0px 20px 30px -10px;
+    transition: box-shadow 0.5s;
+    scale: 1.1;
+    transition: 0.25s;
+
+}
+.produto h3 {
+    color: #044271;           
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 450;
+}
+.produto button {
+    padding: 10px 15px;
+    background-color: rgb(2, 17, 77);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 450;
+    font-size: 11px;
+}
+.produto button:hover {
+    background-color: #06507a; 
+    scale: 1.1;
+    transition: 0.25s;
+}
+
