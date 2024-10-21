@@ -34,23 +34,20 @@ if ($resultado === false) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 
 <body>
     <header>
-       <div class="juntar">
-       <div class="sair">
-        <a href="?logout=true"><p>SAIR</p></a>
-        </div>
-        <div class="sair">
-        <a href="cadastro-produto.php"><p>CADASTRAR PRODUTOS</p></a>
-        </div>
-       </div> 
-       
+        <div class="juntar">
+            <div class="sair">
+                <a href="?logout=true"><p>SAIR</p></a>
+            </div>
+            <div class="sair">
+                <a href="cadastro-produto.php"><p>CADASTRAR PRODUTOS</p></a>
+            </div>
+        </div> 
     </header>
     <main>
         <?php if ($resultado->num_rows > 0): ?>
@@ -59,8 +56,8 @@ if ($resultado === false) {
                     <h3><?php echo htmlspecialchars($produto['nome']); ?></h3>
                     <h3>Descrição: <?php echo htmlspecialchars($produto['descricao']); ?></h3>
                     <h3>Quantidade: <?php echo intval($produto['quantidade']); ?></h3>
-                    <button onclick="editProduct(<?php echo $produto['id']; ?>)">EDITAR</button>
-                    <button onclick="deleteProduct(<?php echo $produto['id']; ?>)">EXCLUIR</button>
+                    <a href="excluir-produto.php?id=<?php echo $produto['id']; ?>">Excluir</a>
+                    <a href="editar-produto.php?id=<?php echo $produto['id']; ?>">Editar</a>
                 </div>
             <?php endwhile; ?>
         <?php else: ?>
